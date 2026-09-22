@@ -1,0 +1,3 @@
+# Failure modes
+
+Empty retrieval produces an explicit insufficient-evidence answer. Network and LLM exceptions are captured in structured errors. Citation IDs are validated against retrieved chunks. Retrieved prompt-injection text is placed after a data boundary and cannot alter orchestration. Timeouts, stale sources, conflicting evidence, and long context require corpus-specific policies and remain limitations of this starter implementation.
